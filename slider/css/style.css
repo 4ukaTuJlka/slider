@@ -1,0 +1,187 @@
+html{
+    background: #131313;
+    color: #fff;
+    font-family: "NunitoSans-Regular";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+body{
+    position: relative;
+    width: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    column-gap: 50px;
+}
+
+.caption{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    font-size: 27px;
+    color: #E3B873;
+    margin-top: 71px;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-bottom: 42px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 27px;
+    text-align: left;
+}
+
+hr{
+    width: 100%;
+    color: #E3B873;
+    background-color: #E3B873;
+}
+
+.data{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 34px;
+    margin-bottom: 80px;
+}
+
+.data-item .name{
+    color: #E3B873;
+    font-weight: bold;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.data-item .details{
+    max-width: 100px;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+
+.controls{
+    user-select: none;
+    display: grid;
+    grid-template-columns: 42px 100px 42px;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.ellipse-container{
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 20px 10px;
+}
+
+.slider-ellipse-button{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.30);
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.ellipse-container:hover .slider-ellipse-button{
+    background-color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.dotes .active .slider-ellipse-button{
+    background-color: white !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.arrow-button{
+    cursor: pointer;
+}
+
+.arrow-button:last-child svg{
+    transform: rotate(180deg);
+}
+
+.content-controls {
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.control-item {
+    display: inline-block;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 6%;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.control-item:hover {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.content-controls .active {
+    color: #E3B873 !important;
+    border-bottom: 1px solid #E3B873 !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.slider-container{
+    user-select: none;
+}
+
+.slider-content{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 71px);
+}
+
+.slider-content .img{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    -webkit-box-shadow: 14px 17px 30px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 14px 17px 30px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 14px 17px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
